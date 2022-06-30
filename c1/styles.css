@@ -17,7 +17,8 @@ body {
 }
 
 header {
-    height: 48px;
+    height: 10vh;
+    min-height: 48px;
 }
 
 header ul {
@@ -46,7 +47,7 @@ header ul li button {
     width: 40px;
     height: 40px;
 
-    background: #00000000;
+    background: none;
     color: #e0e1e48f;
     border-radius: 50%;
     border: none;
@@ -67,4 +68,59 @@ header ul li img {
 .container {
     list-style: none;
     display: flex;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    min-height: 500px;
+    padding-bottom: 10%;
+}
+
+main>* {
+    width: 300px;
+}
+
+main .logo img {
+    width: 100%;
+
+}
+
+main .search {
+    border: #e0e1e482 1px solid;
+    padding: 1rem;
+    border-radius: 3rem;
+    width: 90%;
+    max-width: 700px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main .search:hover {
+    background: #a6a7a848;
+    border: #e0e1e40f 1px solid;
+}
+
+main .search button {
+    width: 10%;
+    background: none;
+    border: none;
+    color: #e0e1e482;
+
+}
+
+main .search input {
+    padding: 5px 0;
+    background: none;
+    color: #e0e1e4;
+    border: none;
+    width: 80%;
+    outline: none;
+    border: 0;
 }
